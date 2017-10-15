@@ -4,7 +4,7 @@
   "description": "Hit the ground running with fast iteration loops",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
   },
   "repository": {
     "type": "git",

@@ -1,12 +1,13 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const URL = require('url'); // built-in utility
 
 http.createServer(function(req, res){
-		const url = req.url !== '/' ? req.url : '/test.html';
+		let url = req.url !== '/' ? req.url : '/test.html';
+		url = URL.parse(url).pathname;
 		const trueURL = path.resolve(__dirname, '.'+url);
 		console.log(trueURL);
-		console.log(__dirname);
     fs.readFile(trueURL,function (err, data){
     	if(!data) {
     		return res.end();
