@@ -1,3 +1,3 @@
 function secondFunction(){
-	return myFunction();
+	return myFunction() + 1; 
 }
