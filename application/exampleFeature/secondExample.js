@@ -1,0 +1,3 @@
+function secondFunction(){
+	return myFunction();
+}
