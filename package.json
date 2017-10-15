@@ -1,0 +1,27 @@
+{
+  "name": "tdd_framework",
+  "version": "1.0.0",
+  "description": "Hit the ground running with fast iteration loops",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacksonStone/TDD_Framework.git"
+  },
+  "keywords": [
+    "testing"
+  ],
+  "author": "jackson stone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacksonStone/TDD_Framework/issues"
+  },
+  "homepage": "https://github.com/jacksonStone/TDD_Framework#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "mocha-headless-chrome": "^1.5.2"
+  }
+}
