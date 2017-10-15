@@ -1,8 +1,8 @@
 
-let files = ['application/**/*.js'];
+let files = ['frontend/**/*.js'];
 const path = process.argv[process.argv.length-1];
 if(path) {
-    files = ['application/**/tests/'+path+'.js', 'application/**/!(tests)/*.js'];
+    files = ['frontend/'+path, 'frontend/**/!(tests)/*.js'];
 }
 
 module.exports = function(config) {
