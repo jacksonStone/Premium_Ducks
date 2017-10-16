@@ -4,9 +4,12 @@
   "description": "Hit the ground running with fast iteration loops",
   "main": "index.js",
   "scripts": {
-    "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js",
-    "test_specific": "karma start --single-run --browsers ChromeHeadless karma.runspecific.js",
-    "watch_frontend": "node test-watch.js"
+    "test": "npm run build && karma start --single-run --browsers ChromeHeadless ./tasks/karma.conf.js",
+    "test_specific": "karma start --single-run --browsers ChromeHeadless ./tasks/karma.runspecific.js",
+    "watch_frontend": "node ./tasks/test-watch.js",
+    "lint": "eslint .",
+    "build": "babel frontend -d dist",
+    "build_watch": "babel frontend -d dist --watch --skip-initial-build"
   },
   "repository": {
     "type": "git",
@@ -23,9 +26,17 @@
   "homepage": "https://github.com/jacksonStone/TDD_Framework#readme",
   "dependencies": {
     "chai": "^4.1.2",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
   },
   "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
     "karma": "^1.7.1",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^2.2.0",

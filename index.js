@@ -4,7 +4,10 @@ const path = require('path');
 const URL = require('url'); // built-in utility
 
 http.createServer(function(req, res){
-		let url = req.url !== '/' ? req.url : '/test.html';
+		let url = req.url !== '/' ? req.url : '/test_pages/test.html';
+		if(url.indexOf('/node_modules') !== 0) {
+			url= '/dist' + url;
+		}
 		url = URL.parse(url).pathname;
 		const trueURL = path.resolve(__dirname, '.'+url);
 		console.log(trueURL);

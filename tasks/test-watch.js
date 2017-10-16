@@ -2,7 +2,7 @@ const fs = require('fs');
 const { exec } = require('child_process');
 
 console.log('Watching: \x1b[32mfrontend/\x1b[0m');
-fs.watch('frontend', { recursive: true, encoding: 'utf8' }, (eventType, filePath) => {
+fs.watch('dist', { recursive: true, encoding: 'utf8' }, (eventType, filePath) => {
   if (filePath) {
   	let testFilePath = filePath.split('/');
   	let arg = filePath;
@@ -30,4 +30,10 @@ fs.watch('frontend', { recursive: true, encoding: 'utf8' }, (eventType, filePath
 		  }
 		});
   }
+});
+
+exec('babel frontend -d dist/js --watch --skip-initial-build', {stdio: "inherit"}, (err, stdout, stderr) => {
+	console.error(err);
+	console.log(stdout);
+	console.log(stderr);
 });

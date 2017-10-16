@@ -8,3 +8,5 @@ By default, all files that are not in a `tests` directory are included as depend
 
 
 To run all tests: `npm run test`
+
+[![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)

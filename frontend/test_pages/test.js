@@ -26,9 +26,13 @@
 	mocha.setup('bdd');
 
 	const path = urlParameters['path'];
-	dynamicallyLoadJS(path, function(){
+	if(path) {
+		dynamicallyLoadJS(path, function(){
+			mocha.run();
+		});
+	} else {
 		mocha.run();
-	});
-		 
+	}
+	
 
 })();

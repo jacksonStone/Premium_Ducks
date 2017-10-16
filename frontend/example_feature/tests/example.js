@@ -1,5 +1,5 @@
 describe("placeholder", function () {
     it("myfunction", function () {
-        assert(myFunction() === 2, 'Should equal 2'); 
+        assert(myFunction() === 2, 'Should equal 2');
     });
-});
+}); 
