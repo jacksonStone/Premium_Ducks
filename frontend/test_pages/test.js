@@ -24,7 +24,7 @@
 	})(window.location.search.substr(1).split('&'));
 
 	mocha.setup('bdd');
-
+	debugger;
 	const path = urlParameters['path'];
 	if(path) {
 		dynamicallyLoadJS(path, function(){
