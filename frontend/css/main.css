@@ -5,13 +5,28 @@ body {
   --blueberry: #6b7a8f;
   --apricot:#f7882f;
   --apple-core:#dcc7aa;
+  --grey:#dddddd;
 }
 
 .main-banner {
-	text-align: center;
 	font-family: 'Source Sans Pro', sans-serif;
-	max-width:100px;
-	padding-top:25px;
+	width:150px;
+	position:absolute;
+	height:100%;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .05);
+	border:0;
+	border-right: 1px;
+	border-style: solid;
+	border-color:var(--grey);
+}
+
+.banner-heading {
+	padding: 20px 0 0 0;
+	text-align: center;
+	border: 0;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: var(--grey);
 }
 
 .banner-image {
