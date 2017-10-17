@@ -1,12 +1,12 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const URL = require('url'); // built-in utility
+const URL = require('url');
 
 http.createServer(function(req, res){
-		let url = req.url !== '/' ? req.url : '/test_pages/test.html';
+		let url = req.url !== '/' ? req.url : '/pages/index.html';
 		if(url.indexOf('/node_modules') !== 0) {
-			if(url.indexOf('.html')!== -1) {
+			if(url.indexOf('.js') === -1) {
 				url= '/frontend' + url;
 			} else {
 				url= '/dist' + url;

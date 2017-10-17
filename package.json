@@ -25,10 +25,11 @@
   },
   "homepage": "https://github.com/jacksonStone/TDD_Framework#readme",
   "dependencies": {
-    "chai": "^4.1.2",
-    "mocha": "^4.0.1",
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.0"
+    "babel-preset-env": "^1.6.0",
+    "chai": "^4.1.2",
+    "imperavi-kube": "^6.5.2",
+    "mocha": "^4.0.1"
   },
   "devDependencies": {
     "eslint": "^4.9.0",

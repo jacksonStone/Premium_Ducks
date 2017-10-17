@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+  --citrus: #f7c331;
+  --blueberry: #6b7a8f;
+  --apricot:#f7882f;
+  --apple-core:#dcc7aa;
+}
+
+.main-banner {
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	max-width:100px;
+	padding-top:25px;
+}
+
+.banner-image {
+	max-height: 50px;
+	max-width: 50px;
+}
+
+.main-banner-heading-premium {
+	text-decoration: underline var(--citrus);
+	color:var(--citrus);
+	font-family: inherit;
+	margin-bottom:0;
+}
+
+.main-banner-heading {
+	color:var(--blueberry);
+	font-family: inherit;
+
+}
+
+
