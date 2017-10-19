@@ -1,20 +1,22 @@
 window.pd.navigation = (()=>{
-	const navigationMapping = {
-
-	};
-	return {
+	const exp = {
 		updatePage(){
-			debugger;
 			const hash = location.hash.substring(1);
-			const bodyContent = this.navigate(hash);
-			populateBodyContent(bodyContent);
+			this.navigate(hash)
+				.then(exp.populateBodyContent);
 		},
 		navigate(hash) {
-
+			return pd.utils.request('pages/' + hash + '.html');
 		},
 		populateBodyContent(content) {
-
+			const contentWindow = document.getElementById('content');
+			const newContentBody = document.createElement('div');
+			newContentBody.innerHTML = content;
+			while (contentWindow.firstChild) {
+    		contentWindow.removeChild(contentWindow.firstChild);
+			}
+			contentWindow.appendChild(newContentBody);
 		}
-
-	}
+	};
+	return exp;
 })();

@@ -32,7 +32,7 @@ fs.watch('dist', { recursive: true, encoding: 'utf8' }, (eventType, filePath) =>
   }
 });
 
-exec('babel frontend -d dist/js --watch --skip-initial-build', {stdio: "inherit"}, (err, stdout, stderr) => {
+exec('babel frontend -d dist --watch --skip-initial-build', {stdio: "inherit"}, (err, stdout, stderr) => {
 	console.error(err);
 	console.log(stdout);
 	console.log(stderr);

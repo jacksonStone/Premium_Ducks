@@ -26,6 +26,7 @@
   "homepage": "https://github.com/jacksonStone/TDD_Framework#readme",
   "dependencies": {
     "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "chai": "^4.1.2",
     "imperavi-kube": "^6.5.2",

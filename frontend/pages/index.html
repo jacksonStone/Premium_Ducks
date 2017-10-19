@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/imperavi-kube/dist/css/kube.css">
     <link rel="stylesheet" href="css/main.css">
- 
 </head>
 <body>
 	<div class="main-banner">
@@ -23,6 +22,11 @@
 			<li class="banner-navigation-item"><a href="#faq" onclick="pd.navigation.updatePage()">FAQ</a></li>
 		</ul>	
 	</div>
-
-	<script />
+	<div id="content">
+		
+	</div>
+	<script src="node_modules/babel-polyfill/browser.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/utils/request.js"></script>
+	<script src="js/navigation/navigation.js"></script>
 </body>

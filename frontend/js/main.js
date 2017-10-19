@@ -1,1 +1,4 @@
-window.pd = {};
+window.pd = {
+	utils: {},
+	navigation: {}
+};
