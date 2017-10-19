@@ -7,26 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/imperavi-kube/dist/css/kube.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navigation.css">
 </head>
 <body>
-	<div class="main-banner">
-		<div class="banner-heading">
-			<img class="banner-image" src="favicon.ico"/>
-			<h6 class="main-banner-heading-premium">Premium</h6>
-    	<h6 class="main-banner-heading">Ducks</h6>
+	<div class="navigation">
+			<a href="#home" onclick="pd.navigation.updatePage()">
+				<div class="main-banner">
+				<div class="banner-heading">
+					<img class="banner-image" src="favicon.ico"/>
+					<h6 class="main-banner-heading-premium">Premium</h6>
+		    	<h6 class="main-banner-heading">Ducks</h6>
+				</div>
+			</a>
+			<ul class="banner-navigation">
+				<li class="banner-navigation-item" id="ducks"><a href="#ducks" onclick="pd.navigation.updatePage('ducks')">Ducks</a></li>
+				<li class="banner-navigation-item" id="swag"><a href="#swag" onclick="pd.navigation.updatePage('swag')">Swag</a></li>
+				<li class="banner-navigation-item" id="faq"><a href="#faq" onclick="pd.navigation.updatePage('faq')">FAQ</a></li>
+			</ul>	
 		</div>
-		<ul class="banner-navigation">
-			<li class="banner-navigation-item">
-		<a href="#ducks" onclick="pd.navigation.updatePage()">Ducks</a></li>
-			<li class="banner-navigation-item"><a href="#swag" onclick="pd.navigation.updatePage()">Swag</a></li>
-			<li class="banner-navigation-item"><a href="#faq" onclick="pd.navigation.updatePage()">FAQ</a></li>
-		</ul>	
 	</div>
+
 	<div id="content">
 		
 	</div>
+	
 	<script src="node_modules/babel-polyfill/browser.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/utils/request.js"></script>
 	<script src="js/navigation/navigation.js"></script>
+	<script src="js/onload.js"></script>
 </body>
