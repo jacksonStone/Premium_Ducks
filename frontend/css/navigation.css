@@ -3,7 +3,7 @@
 }
 .main-banner {
 	font-family: 'Source Sans Pro', sans-serif;
-	width:150px;
+	width:100px;
 	position:absolute;
 	height:100%;
 	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .05);
@@ -22,6 +22,7 @@
 .banner-image {
 	max-height: 50px;
 	max-width: 50px;
+	margin-bottom: 20px;
 }
 
 .main-banner-heading-premium {

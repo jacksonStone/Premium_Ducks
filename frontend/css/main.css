@@ -7,3 +7,13 @@ body {
   --apple-core:#dcc7aa;
   --grey:#dddddd;
 }
+
+body, html {
+   height:100%
+}
+
+#content {
+	margin-left:100px;
+	/*background-color: var(--grey);*/
+	min-height: 100%;
+}
