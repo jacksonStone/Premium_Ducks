@@ -1,0 +1,16 @@
+[{
+	"name":"jack",
+	"image":"jack.png",
+	"image-scale":2
+},
+{
+	"name":"french",
+	"image":"french.png",
+	"image-scale":0.7
+},
+{
+	"name":"bat",
+	"image":"batman.png",
+	"image-scale":1
+}
+]
