@@ -11,19 +11,23 @@
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-	<div class="navigation">
-			<a href="#home" onclick="pd.navigation.updatePage()">
-				<div class="main-banner">
-				<div class="banner-heading">
-					<img class="banner-image" src="favicon.ico"/>
-				</div>
-			</a>
-			<ul class="banner-navigation">
-				<li class="banner-navigation-item" id="ducks"><a href="#ducks" onclick="pd.navigation.updatePage('ducks')">Ducks</a></li>
-				<li class="banner-navigation-item" id="swag"><a href="#swag" onclick="pd.navigation.updatePage('swag')">Swag</a></li>
-				<li class="banner-navigation-item" id="faq"><a href="#faq" onclick="pd.navigation.updatePage('faq')">FAQ</a></li>
-			</ul>	
+	<div class="navigation shadow">
+		<a href="#home" onclick="pd.navigation.updatePage()">
+			<div class="main-banner">
+			<div class="banner-heading">
+				<img class="banner-image" src="favicon.ico"/>
+			</div>
 		</div>
+		</a>
+		<ul class="banner-navigation">
+			<li class="banner-navigation-item" id="ducks"><a href="#ducks" onclick="pd.navigation.updatePage('ducks')">Ducks</a></li>
+			<li class="banner-navigation-item" id="swag"><a href="#swag" onclick="pd.navigation.updatePage('swag')">Swag</a></li>
+			<li class="banner-navigation-item" id="faq"><a href="#faq" onclick="pd.navigation.updatePage('faq')">FAQ</a></li>
+		</ul>	
+	</div>
+	<div class="corner-logo shadow">
+		<div class="premium-corner">Premium</div>
+		<div class="ducks-corner">Ducks</div>
 	</div>
 
 	<div id="content">

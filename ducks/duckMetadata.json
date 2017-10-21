@@ -11,6 +11,9 @@
 {
 	"name":"bat",
 	"image":"batman.png",
-	"image-scale":1
+},
+{
+	"name":"squawk",
+	"image":"squawk.jpg"
 }
 ]

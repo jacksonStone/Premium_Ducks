@@ -1,16 +1,19 @@
-.navigation a{
-	text-decoration: none
-}
-.main-banner {
-	font-family: 'Source Sans Pro', sans-serif;
+.navigation {
+	position:fixed;
+	top:0;
 	width:100px;
-	position:absolute;
 	height:100%;
-	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .05);
+	font-family: 'Source Sans Pro', sans-serif;
 	border:0;
 	border-right: 1px;
 	border-style: solid;
 	border-color:var(--grey);
+	z-index: 100;
+	background-color: white;
+}
+
+.navigation a{
+	text-decoration: none;
 }
 
 .banner-heading {
@@ -88,7 +91,33 @@
 	color:var(--citrus);
 }
 
+.corner-logo {
+    top: -86px;
+    right: -134px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    position: fixed;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: white;
+}
+.premium-corner {
+		margin-top: 127px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration-line: underline;
+    color: var(--citrus);
+}
 
+.ducks-corner {
+    margin-top: 7px;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--blueberry);
+
+}
 
 
 
