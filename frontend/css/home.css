@@ -31,6 +31,7 @@
 	background-color: var(--apple-core);
 	padding:20px;
 	margin-top:30px;
+	box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
 .fun-fact {
@@ -70,8 +71,65 @@
 .history-title-subtext {
 	font-size: 20px;
 	font-style: italic;
+	margin-bottom: 25px;
+}
+
+.history-book {
+	padding-bottom: 20px;
+}
+
+.history-book h6 {
+	margin-bottom: 10px;
+	font-size:20px;
+	color:white;
+	font-weight: bold;
+}
+
+.history-book p {
+	text-align: left;
+	font-size:18px;
+	max-width: 370px;
+	margin: 0 auto;
+}
+
+.history-book img {
 	margin-bottom: 10px;
 }
+
+.left-page img {
+	width:100px;
+	height:auto;
+}
+
+.left-page {
+	border-right:1px solid white;
+	padding-bottom: 20px;
+}
+.right-page img {
+	width:80px;
+	height:auto;
+}
+
+.embrace-tradition {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.favorites h4{
+	margin-top:30px;
+	color: var(--apricot);
+	text-decoration-line: underline;
+	font-weight: bold;
+	font-size: 30px;
+}
+.favorites h2{
+	color: var(--blueberry);
+	font-weight: bold;
+	font-size: 48px;
+	margin-bottom: 40px;
+}
+
+
 
 
 /*ANIMATIONS*/
@@ -79,23 +137,23 @@
   animation: slidein 1s;
 }
 .quote:nth-child(1) {
-  animation: fadein 2s;
+  animation: fadein 1.5s;
 }
 
 .quote:nth-child(2) {
-  animation: fadein 4s;
+  animation: fadein 2s;
 }
 
 .quote:nth-child(3) {
-  animation: fadein 6s;
+  animation: fadein 2.5s;
 }
 
 .quote:nth-child(4) {
-  animation: fadein 8s;
+  animation: fadein 3s;
 }
 
 .find-yours {
-  animation: fadein 3s;
+  animation: fadein 1.5s;
 }
 
 .quote-qualifier {
