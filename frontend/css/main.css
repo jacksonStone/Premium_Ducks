@@ -4,6 +4,7 @@ body {
   --citrus: #FCCD58;
   --blueberry: #6b7a8f;
   --apricot:#f7882f;
+  --apricot-hover:#E68232;
   --apple-core:#dcc7aa;
   --grey:#dddddd;
   --duck-eyes:#55B3E7;
@@ -28,4 +29,10 @@ button {
 	height:50px;
 	font-weight: bold;
 	font-size: 20px;
+	-webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+h3 {
+	font-family: 'Source Sans Pro', sans-serif;
 }

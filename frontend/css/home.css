@@ -1,6 +1,5 @@
 .home {
 	font-family: 'Source Sans Pro', sans-serif;
-
 }
 
 .home-page-banner {
@@ -35,12 +34,44 @@
 }
 
 .fun-fact {
-	font-size: 24px;
+	font-size: 20px;
 	font-style: italic;
 	color: white;
 }
 
+.question-text {
+	max-width: 550px;
+	margin: 40px auto 30px auto;
+}
 
+.question button {
+	background-color: var(--apricot);
+	margin-bottom: 30px;
+}
+
+.question button:hover {
+	background-color: var(--apricot-hover);
+}
+
+.history {
+	background-color: var(--blueberry);
+	padding: 20px 0;
+	text-align:center;
+	color:white;
+}
+
+.history-title {
+	margin-top: 10px;
+	color:white;
+	font-size: 48px;
+	font-weight: bold;
+}
+
+.history-title-subtext {
+	font-size: 20px;
+	font-style: italic;
+	margin-bottom: 10px;
+}
 
 
 /*ANIMATIONS*/
