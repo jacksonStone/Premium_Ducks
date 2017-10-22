@@ -5,7 +5,7 @@ window.pd.navigation = (()=>{
 			page = page || 'home';
 			exp.hightlightNavigationItem(page);
 			exp.navigate(page)
-				.then(exp.populateBodyContent);
+				.then(exp.handleNewPage);
 		},
 		hightlightNavigationItem(page) {
 			const currentTab = document.getElementById(page);
@@ -14,9 +14,14 @@ window.pd.navigation = (()=>{
 			currentTab && currentTab.classList.add(ACTIVE);
 		},
 		navigate(page) {
-			return pd.utils.request('pages/' + page + '.html');
+			return Promise.all([
+				pd.utils.request('pages/' + page + '.html'),
+				pd.utils.request('js/pages/' + page + '.js'),			
+			]);
 		},
-		populateBodyContent(content) {
+		handleNewPage(payload) {
+			const content = payload[0];
+			const js = payload[1];
 			const contentWindow = document.getElementById('content');
 			const newContentBody = document.createElement('div');
 			newContentBody.innerHTML = content;
@@ -24,6 +29,7 @@ window.pd.navigation = (()=>{
     		contentWindow.removeChild(contentWindow.firstChild);
 			}
 			contentWindow.appendChild(newContentBody);
+			eval(js);
 		},
 	};
 	return exp;
