@@ -8,5 +8,5 @@
 	pd.utils.requestDucks()
 		.then(ducks => {
 			console.log(ducks);
-		})
+		});
 })();
