@@ -1,103 +1,103 @@
 [
-	{
-		"name":"bishop",
-		"image":"bishop.jpg",
-		"title":"The Bishop",
-		"joke":"Does your code need to be purged? Does it need a medival cleansing by a duck that has been there and done that? We give you: The Bishop",
-		"link":"http://amzn.to/2ztYbkX",
-		"by":"Duckshop",
-		"stars":5
-	},
-	{
-		"name":"jack",
-		"image":"jack.jpg",
-		"link":"http://amzn.to/2yGuMqm",
-		"joke":"Some codebases feel like they twist and turn like ocean waves. Well this duck knows how to sail the open seas, and find treasure along the way.",
-		"by":"Celebriducks",
-		"title":"Captain Quack",
-		"stars":5
-	},
-	{
-		"name":"bavarian",
-		"image":"bavarian.jpg",
-		"link":"http://amzn.to/2yGvN1m",
-		"joke":"Does your code make a duck wish he had a stiff drink? The Bavarian comes prepared. He knows, food and brew in hand, that the two of you can conquer anything.",
-		"by":"Duckshop",
-		"title":"The Bavarian",
-		"stars":5
-	},
-	{
-		"name":"french",
-		"image":"french.jpg",
-		"by":"Duckshop",
-		"link":"http://amzn.to/2gXh60O"
-	},{
-		"name":"holmes",
-		"image":"holmes.jpg",
-		"by":"Duckshop",
-		"link":"http://amzn.to/2yzoV75"
-	},{
-		"name":"mozart",
-		"image":"mozart.jpg",
-		"by":"Duckshop",
-		"link":"http://amzn.to/2xXbFEN"
-	},
-	{
-		"name":"off",
-		"image":"off.jpg",
-		"by":"Duckshop",
-		"link":"http://amzn.to/2xXiLJz"
-	},
-	{
-		"name":"classic",
-		"image":"classic.jpg",
-		"by":"Duckshop",
-		"link":"http://amzn.to/2yA3B18"
-	},{
-		"name":"sigmond",
-		"image":"sigmond.jpg",
-		"by":"Duckshop",
-		"link":"http://amzn.to/2yG0xzK"
-	},{
-		"name":"ainthavenit",
-		"image":"ainthavenit.jpg",
-		"by":"Duckshop",
-		"link":"http://amzn.to/2yG0HXS"
-	},
-		{
-		"name":"surgeon",
-		"image":"surgeon.jpg",
-		"by":"Duckshop",
-		"link":"http://amzn.to/2gZmEIn",
-	},
-	{
-		"name":"donald",
-		"image":"donald.jpg",
-		"by":"Celebriducks",
-		"image-scale":0.7,
-		"link":"http://amzn.to/2xXeHJm"
-	},{
-		"name":"duckonator",
-		"image":"terminator.jpg",
-		"by":"Celebriducks",
-		"image-scale":0.7,
-		"link":"http://amzn.to/2yGtVpm"
-	},
-	{
-		"name":"bat",
-		"image":"batman.png",
-		"link": "http://amzn.to/2gYfOT5"
-	},
-	{
-		"name":"squawk",
-		"image":"squawk.jpg",
-		"by":"Celebriducks",
-		"link":"http://amzn.to/2yyXWbH"
-	},
-	{
-		"name":"potter",
-		"image":"potter.jpg",
-		"by":"Celebriducks",
-		"link":"http://amzn.to/2xXTPS8"
-	}
+  {
+    "name": "bishop",
+    "image": "bishop.jpg",
+    "title": "The Bishop",
+    "joke": "Does your code need to be purged? Does it need a medival cleansing by a duck that has been there and done that? We give you: The Bishop",
+    "link": "http://amzn.to/2ztYbkX",
+    "by": "Duckshop",
+    "stars": 5
+  },
+  {
+    "name": "jack",
+    "image": "jack.jpg",
+    "link": "http://amzn.to/2yGuMqm",
+    "joke": "Some codebases feel like they twist and turn like ocean waves. Well this duck knows how to sail the open seas, and find treasure along the way.",
+    "by": "Celebriducks",
+    "title": "Captain Quack",
+    "stars": 5
+  },
+  {
+    "name": "bavarian",
+    "image": "bavarian.jpg",
+    "link": "http://amzn.to/2yGvN1m",
+    "joke": "Does your code make a duck wish he had a stiff drink? The Bavarian comes prepared. He knows, food and brew in hand, that the two of you can conquer anything.",
+    "by": "Duckshop",
+    "title": "The Bavarian",
+    "stars": 5
+  },
+  {
+    "name": "french",
+    "image": "french.jpg",
+    "by": "Duckshop",
+    "link": "http://amzn.to/2gXh60O"
+  }, {
+    "name": "holmes",
+    "image": "holmes.jpg",
+    "by": "Duckshop",
+    "link": "http://amzn.to/2yzoV75"
+  }, {
+    "name": "mozart",
+    "image": "mozart.jpg",
+    "by": "Duckshop",
+    "link": "http://amzn.to/2xXbFEN"
+  },
+  {
+    "name": "off",
+    "image": "off.jpg",
+    "by": "Duckshop",
+    "link": "http://amzn.to/2xXiLJz"
+  },
+  {
+    "name": "classic",
+    "image": "classic.jpg",
+    "by": "Duckshop",
+    "link": "http://amzn.to/2yA3B18"
+  }, {
+    "name": "sigmond",
+    "image": "sigmond.jpg",
+    "by": "Duckshop",
+    "link": "http://amzn.to/2yG0xzK"
+  }, {
+    "name": "ainthavenit",
+    "image": "ainthavenit.jpg",
+    "by": "Duckshop",
+    "link": "http://amzn.to/2yG0HXS"
+  },
+  {
+    "name": "surgeon",
+    "image": "surgeon.jpg",
+    "by": "Duckshop",
+    "link": "http://amzn.to/2gZmEIn"
+  },
+  {
+    "name": "donald",
+    "image": "donald.jpg",
+    "by": "Celebriducks",
+    "image-scale": 0.7,
+    "link": "http://amzn.to/2xXeHJm"
+  }, {
+    "name": "duckonator",
+    "image": "terminator.jpg",
+    "by": "Celebriducks",
+    "image-scale": 0.7,
+    "link": "http://amzn.to/2yGtVpm"
+  },
+  {
+    "name": "bat",
+    "image": "batman.png",
+    "link": "http://amzn.to/2gYfOT5"
+  },
+  {
+    "name": "squawk",
+    "image": "squawk.jpg",
+    "by": "Celebriducks",
+    "link": "http://amzn.to/2yyXWbH"
+  },
+  {
+    "name": "potter",
+    "image": "potter.jpg",
+    "by": "Celebriducks",
+    "link": "http://amzn.to/2xXTPS8"
+  }
 ]
