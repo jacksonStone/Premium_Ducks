@@ -19,46 +19,47 @@
   },
   {
     "name": "bavarian",
-    "image": "bavarian.jpg",
+    "image": "bavarian.png",
     "link": "http://amzn.to/2yGvN1m",
     "joke": "Does your code make a duck wish he had a stiff drink? The Bavarian comes prepared. He knows, food and brew in hand, that the two of you can conquer anything.",
     "by": "Duckshop",
     "title": "The Bavarian",
     "stars": 5
   },
+    {
+    "name": "squawk",
+    "image": "squawk.jpg",
+    "by": "Celebriducks",
+    "link": "http://amzn.to/2yyXWbH",
+    "title":"Mr. Squawk"
+  },
   {
-    "name": "french",
-    "image": "french.jpg",
+    "name": "sigmond",
+    "image": "sigmond.jpg",
     "by": "Duckshop",
-    "link": "http://amzn.to/2gXh60O"
-  }, {
-    "name": "holmes",
-    "image": "holmes.jpg",
-    "by": "Duckshop",
-    "link": "http://amzn.to/2yzoV75"
-  }, {
-    "name": "mozart",
-    "image": "mozart.jpg",
-    "by": "Duckshop",
-    "link": "http://amzn.to/2xXbFEN"
+    "link": "http://amzn.to/2yG0xzK",
+    "title":"Sigmond"
   },
   {
     "name": "off",
     "image": "off.jpg",
     "by": "Duckshop",
-    "link": "http://amzn.to/2xXiLJz"
+    "link": "http://amzn.to/2xXiLJz",
+    "title":"The Disturbed"
   },
   {
     "name": "classic",
     "image": "classic.jpg",
     "by": "Duckshop",
     "link": "http://amzn.to/2yA3B18"
-  }, {
-    "name": "sigmond",
-    "image": "sigmond.jpg",
+  }, 
+
+  {
+    "name": "french",
+    "image": "french.jpg",
     "by": "Duckshop",
-    "link": "http://amzn.to/2yG0xzK"
-  }, {
+    "link": "http://amzn.to/2gXh60O"
+  },{
     "name": "ainthavenit",
     "image": "ainthavenit.jpg",
     "by": "Duckshop",
@@ -88,11 +89,17 @@
     "image": "batman.png",
     "link": "http://amzn.to/2gYfOT5"
   },
-  {
-    "name": "squawk",
-    "image": "squawk.jpg",
-    "by": "Celebriducks",
-    "link": "http://amzn.to/2yyXWbH"
+
+   {
+    "name": "holmes",
+    "image": "holmes.jpg",
+    "by": "Duckshop",
+    "link": "http://amzn.to/2yzoV75"
+  }, {
+    "name": "mozart",
+    "image": "mozart.jpg",
+    "by": "Duckshop",
+    "link": "http://amzn.to/2xXbFEN"
   },
   {
     "name": "potter",
