@@ -5,6 +5,7 @@ body {
   --blueberry: #6b7a8f;
   --apricot:#f7882f;
   --apricot-hover:#E68232;
+  --citrus-hover:#E2B649;
   --apple-core:#dcc7aa;
   --grey:#dddddd;
   --duck-eyes:#55B3E7;
@@ -33,7 +34,27 @@ button {
   transition: background-color 0.2s;
 }
 
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6, p, a{
 	font-family: 'Source Sans Pro', sans-serif;
 	color:var(--blueberry);
+}
+#footer {
+	margin-left: 100px;
+	font-size: 16px;
+	color:white;
+	background-color: var(--apple-core);
+	padding:0 20px;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#footer a{
+	color:white;
+	font-weight: normal;
+}
+#footer .row {
+	padding: 20px 0;
+}
+#footer .designed-by {
+	text-align: right;
 }

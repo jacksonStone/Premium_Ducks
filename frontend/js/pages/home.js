@@ -10,9 +10,9 @@
     		let duck = ducks[j];
     		res += `
     			<div class="col col-4" >
-    					<div class="favorite-canvas shadow">
+    					<button onclick="pd.utils.makeMoney('${duck.link}')" class="favorite-canvas shadow">
     						<img src="images/${duck.image}">
-    					</div>
+    					</button>
     					<h6>${duck.title}</h6>
 	    		</div>
     		`;

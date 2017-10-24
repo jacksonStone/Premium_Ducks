@@ -1,6 +1,10 @@
 window.pd.navigation = (()=>{
 	const ACTIVE = 'active-navigation';
 	const exp = {
+		updatePageAndHash(page) {
+			location.hash = "#"+page;
+			return exp.updatePage(page);
+		},
 		updatePage(page){
 			page = page || 'home';
 			exp.hightlightNavigationItem(page);

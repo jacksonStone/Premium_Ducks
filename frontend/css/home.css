@@ -131,6 +131,7 @@
 	font-weight: bold;
 	font-size: 48px;
 	margin-bottom: 40px;
+	margin-top: -10px;
 }
 
 .single-favorite-container {
@@ -151,12 +152,24 @@
 	max-width: 150px;
 	max-height: 150px;
 	margin:0 auto;
+	border-radius: 3px;
+	padding:0 0;
+	height:auto;
+	border:none;
+
 }
 .favorite-canvas img{
 	width: auto;
   max-width: 150px;
   height: auto;
+}
 
+.favorites-button {
+	background-color: var(--citrus);
+	margin-bottom: 30px;
+}
+.favorites-button:hover {
+	background-color: var(--citrus-hover);
 }
 
 
