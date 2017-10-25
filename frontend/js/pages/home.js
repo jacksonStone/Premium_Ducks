@@ -1,6 +1,6 @@
 ((pd) => {
   function placeDucks (ducks) {
-  	const numOfFavorites = 6;
+  	const numOfFavorites = 9;
     const favoritesContainer = document.getElementById('favorites-container');
 		let res = '<div class="single-favorite-container">';
 		let duckContainer = document.createElement('div');

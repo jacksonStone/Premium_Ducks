@@ -1,9 +1,9 @@
 window.pd.navigation = (()=>{
 	const ACTIVE = 'active-navigation';
+	const pagesAlreadyVisited = {};
 	const exp = {
-		updatePageAndHash(page) {
-			location.hash = "#"+page;
-			return exp.updatePage(page);
+		updateHash(hash) {
+			location.hash = "#"+hash;
 		},
 		updatePage(page){
 			page = page || 'home';

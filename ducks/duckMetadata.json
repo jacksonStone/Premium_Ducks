@@ -51,19 +51,22 @@
     "name": "classic",
     "image": "classic.jpg",
     "by": "Duckshop",
-    "link": "http://amzn.to/2yA3B18"
+    "link": "http://amzn.to/2yA3B18",
+    "title": "The Classic"
   }, 
 
   {
     "name": "french",
     "image": "french.jpg",
     "by": "Duckshop",
-    "link": "http://amzn.to/2gXh60O"
+    "link": "http://amzn.to/2gXh60O",
+    "title": "Monsieur Duck"
   },{
     "name": "ainthavenit",
     "image": "ainthavenit.jpg",
     "by": "Duckshop",
-    "link": "http://amzn.to/2yG0HXS"
+    "link": "http://amzn.to/2yG0HXS",
+    "title": "Ain't Having it"
   },
   {
     "name": "surgeon",
