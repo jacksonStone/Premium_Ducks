@@ -1,7 +1,13 @@
 module.exports = function(config) {
   config.set({
     frameworks: ['mocha', 'chai'],
-    files: ['../dist/!(test_pages)/**/*.js'],
+    basePath: '../dist/js',
+    files: [
+        'main.js',
+        'utils/*.js',
+        'navigation/*.js',
+        'pages/*.js',
+    ],
     reporters: ['progress'],
     port: 9876,  // karma web server port
     colors: true,
