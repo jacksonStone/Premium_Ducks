@@ -120,8 +120,8 @@
 }
 
 .embrace-tradition {
-	margin-top: 10px;
-	margin-bottom: 40px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	background-color: var(--citrus);
 }
 
@@ -161,8 +161,8 @@
 
 .favorite-canvas {
 	overflow: hidden;
-	max-width: 150px;
-	max-height: 150px;
+	max-width: 200px;
+	max-height: 200px;
 	margin:0 auto;
 	border-radius: 3px;
 	padding:0 0;
@@ -172,7 +172,7 @@
 }
 .favorite-canvas img{
 	width: auto;
-  max-width: 150px;
+  max-width: 200px;
   height: auto;
 }
 
