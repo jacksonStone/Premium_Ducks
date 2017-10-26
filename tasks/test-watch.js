@@ -11,8 +11,8 @@ fs.watch('dist', { recursive: true, encoding: 'utf8' }, (eventType, filePath) =>
   		arg = testFilePath.join('/');
   	}
   	console.log('testing: ' + arg);
-  	
 		exec('npm run test_specific -s -- ' + arg, {stdio: "inherit"}, (err, stdout, stderr) => {
+
 		  if(stdout) {
 		  	const startingPoint = stdout.indexOf('HeadlessChrome');
 		  	if(startingPoint !== -1 ) {
@@ -32,8 +32,16 @@ fs.watch('dist', { recursive: true, encoding: 'utf8' }, (eventType, filePath) =>
   }
 });
 
-exec('babel frontend -d dist --watch --skip-initial-build', {stdio: "inherit"}, (err, stdout, stderr) => {
-	console.error(err);
-	console.log(stdout);
-	console.log(stderr);
+const { spawn } = require('child_process');
+const build_watch = spawn('npm', ['run', 'build_watch'], {detached: false});
+build_watch.stdout.on('data', (data) => {
+  console.log(`Babel: ${data}`);
+});
+
+build_watch.stderr.on('data', (data) => {
+  console.log(`Babel Error: ${data}`);
+});
+
+build_watch.on('close', (code) => {
+  console.log(`Babel Closed: ${code}`);
 });

@@ -19,8 +19,8 @@ window.pd.navigation = (()=>{
 		},
 		navigate(page) {
 			return Promise.all([
-				pd.utils.request('pages/' + page + '.html'),
-				pd.utils.request('js/pages/' + page + '.js'),			
+				pd.utils.cachedRequest('pages/' + page + '.html'),
+				pd.utils.cachedRequest('js/pages/' + page + '.js'),
 			]);
 		},
 		handleNewPage(payload) {

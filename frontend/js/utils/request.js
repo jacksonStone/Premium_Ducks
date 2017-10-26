@@ -1,24 +1,40 @@
-pd.utils.request = url => {
-  return new Promise((resolve, reject) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", url);
-    xhr.onload = () => resolve(xhr.responseText);
-    xhr.onerror = () => reject(xhr.statusText);
-    xhr.send();
-  });
-};
+pd.utils = (()=>{
+  return {
 
-pd.utils.requestDucks = name => {
-	if(pd.duckData) {
-		//In memory cache
-		return new Promise(resolve=>{
-			resolve(pd.duckData);
-		});
-	}
-  return pd.utils.request('ducks')
-  	.then(result => {
-  		const duckData = JSON.parse(result);
-  		pd.duckData = duckData;
-  		return duckData;
-  	});
-};
+    request(url) {
+      return new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", url);
+        xhr.onload = () => resolve(xhr.responseText);
+        xhr.onerror = () => reject(xhr.statusText);
+        xhr.send();
+      });
+    },
+
+    requestDucks() {
+      return pd.utils.cachedRequest('ducks')
+        .then(result => {
+          const duckData = JSON.parse(result);
+          pd.duckData = duckData;
+          return duckData;
+        });
+    },
+
+    cachedRequest(url){
+      if(!pd._cachedRequests) {
+        pd._cachedRequests = {};
+      }
+      const cachedValue = pd._cachedRequests[url];
+      if(cachedValue!==undefined) {
+        return Promise.resolve(cachedValue);
+      }
+
+      return pd.utils.request(url)
+        .then(content => {
+          pd._cachedRequests[url] = content;
+          return content;
+        });
+    }
+  };
+})();
+  
