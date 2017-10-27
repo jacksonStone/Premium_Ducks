@@ -23,7 +23,6 @@
 
     	duckContainer.innerHTML = res;
     	favoritesContainer.appendChild(duckContainer);
-    
   }
 
   pd.utils.requestDucks()

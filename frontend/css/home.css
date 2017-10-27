@@ -35,7 +35,6 @@
 	background-color: var(--apple-core);
 	padding:20px;
 	margin-top:30px;
-	box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
 .fun-fact {

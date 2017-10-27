@@ -3,17 +3,19 @@
     "name": "bishop",
     "image": "bishop.jpg",
     "title": "The Bishop",
-    "joke": "Does your code need to be purged? Does it need a medival cleansing by a duck that has been there and done that? We give you: The Bishop",
+    "joke": "Does your code need to a medival cleansing? Well here’s the duck for the job.",
     "link": "http://amzn.to/2ztYbkX",
     "by": "Duckshop",
+    "buy": "Buy It!",
     "stars": 5
   },
   {
     "name": "jack",
     "image": "jack.jpg",
     "link": "http://amzn.to/2yGuMqm",
-    "joke": "Some codebases feel like they twist and turn like ocean waves. Well this duck knows how to sail the open seas, and find treasure along the way.",
+    "joke": "Need a bit of luck while swimming through your code? It doesn't get better than Captain Quack.",
     "by": "Celebriducks",
+    "buy": "Ship it!",
     "title": "Captain Quack",
     "stars": 5
   },
@@ -21,92 +23,115 @@
     "name": "bavarian",
     "image": "bavarian.png",
     "link": "http://amzn.to/2yGvN1m",
-    "joke": "Does your code make a duck wish he had a stiff drink? The Bavarian comes prepared. He knows, food and brew in hand, that the two of you can conquer anything.",
+    "joke": "Does your code make a duck wish he had a stiff drink? The Bavarian comes prepared.",
     "by": "Duckshop",
     "title": "The Bavarian",
+    "buy": "Austrinken!",
     "stars": 5
   },
     {
     "name": "squawk",
     "image": "squawk.jpg",
+    "joke": "Are you the captian of your code? Live long and prosper with this captain by your side.",
     "by": "Celebriducks",
     "link": "http://amzn.to/2yyXWbH",
+    "buy": "Target Aquired!",
     "title":"Mr. Squawk"
   },
-  {
-    "name": "sigmond",
-    "image": "sigmond.jpg",
+    {
+    "name": "classic",
+    "image": "classic.jpg",
+    "joke": "Here's a duck that's as safe a play as your Java code. For people who use the acronym KISS a lot.",
     "by": "Duckshop",
-    "link": "http://amzn.to/2yG0xzK",
-    "title":"Sigmond"
+    "link": "http://amzn.to/2yA3B18",
+    "buy": "Go old school",
+    "title": "The Classic"
   },
   {
     "name": "off",
     "image": "off.jpg",
+    "joke": "This Duck has seen one too many PHP codebases, but maybe you have too! Go crazy together!",
     "by": "Duckshop",
     "link": "http://amzn.to/2xXiLJz",
+    "buy": "Go Crazy!",
     "title":"The Disturbed"
   },
   {
-    "name": "classic",
-    "image": "classic.jpg",
-    "by": "Duckshop",
-    "link": "http://amzn.to/2yA3B18",
-    "title": "The Classic"
-  }, 
-
-  {
     "name": "french",
     "image": "french.jpg",
+    "joke": "If you view coding as an art and a tool of self discovery this cultured duck is right there with you.",
     "by": "Duckshop",
     "link": "http://amzn.to/2gXh60O",
+    "buy": "Wee Wee!",
     "title": "Monsieur Duck"
+  },
+  {
+    "name": "sigmond",
+    "image": "sigmond.jpg",
+    "joke": "Bugs so bad you need to see a shrink? Or maybe an _EGO_ boost? This duck can help.",
+    "by": "Duckshop",
+    "link": "http://amzn.to/2yG0xzK",
+    "buy": "Start blaming your mother!",
+    "title":"Sigmond"
   },{
     "name": "ainthavenit",
+    "joke": "Do you work from home sometimes just so you don't have to wear pants? This duck gets that.",
     "image": "ainthavenit.jpg",
     "by": "Duckshop",
     "link": "http://amzn.to/2yG0HXS",
+    "buy": "Having it?",
     "title": "Ain't Having it"
   },
   {
     "name": "surgeon",
+    "joke": "Do you have to tread lightly in a legacy systems with no tests? This duck's steady hands can help.",
     "image": "surgeon.jpg",
     "by": "Duckshop",
+    "buy": "Cut to the chase",
     "link": "http://amzn.to/2gZmEIn"
   },
   {
     "name": "donald",
     "image": "donald.jpg",
+    "joke": "Sprint points are down? Of course they are. They're awful. The worst. Start coding again! Big League!",
     "by": "Celebriducks",
-    "image-scale": 0.7,
+    "buy": "Start Winning",
     "link": "http://amzn.to/2xXeHJm"
-  }, {
+  },{
     "name": "duckonator",
     "image": "terminator.jpg",
+    "joke": "\/\/TODO:: Insert: \"I'll be back!\" reference here.",
     "by": "Celebriducks",
-    "image-scale": 0.7,
+    "buy": "Obtain it",
     "link": "http://amzn.to/2yGtVpm"
   },
   {
     "name": "bat",
     "image": "batman.png",
+    "joke": "Don't be the programmer your codebase deserves. Be the one it needs you to be.",
+    "buy": "Embrace Vigilanty Justice",
     "link": "http://amzn.to/2gYfOT5"
   },
-
-   {
+  {
     "name": "holmes",
     "image": "holmes.jpg",
+    "joke": "Does fixing a bug in your codebase involve following a trail of clues? This duck is the best in the biz.",
+    "buy": "Deduce it!",
     "by": "Duckshop",
     "link": "http://amzn.to/2yzoV75"
   }, {
     "name": "mozart",
     "image": "mozart.jpg",
+    "joke": "Are you a functional programmer? Well few can compose better than this duck!",
+    "buy": "Orchestrate a purchase",
     "by": "Duckshop",
     "link": "http://amzn.to/2xXbFEN"
   },
   {
     "name": "potter",
     "image": "potter.jpg",
+    "joke":"Ever wish you had a wand to wave away the bugs? This duck brings his own.",
+    "buy": "Accio Duck!",
     "by": "Celebriducks",
     "link": "http://amzn.to/2xXTPS8"
   }
