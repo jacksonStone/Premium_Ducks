@@ -9,6 +9,7 @@ body {
   --apple-core:#dcc7aa;
   --grey:#dddddd;
   --duck-eyes:#55B3E7;
+  --line-color:rgba(0, 0, 0, 0.08);
 }
 
 body, html {

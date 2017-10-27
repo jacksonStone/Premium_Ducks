@@ -46,7 +46,7 @@
 .question {
 	margin-top: 30px;
 	text-align: center;
-	border-bottom: solid 1px rgba(0, 0, 0, 0.08);
+	border-bottom: solid 1px var(--line-color);
 }
 
 .question-text {

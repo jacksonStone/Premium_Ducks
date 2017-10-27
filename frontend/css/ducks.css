@@ -1,0 +1,57 @@
+#ducks {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.ducks-banner {
+	margin: 30px 0 40px 0;
+	text-align: center;
+}
+.ducks-banner h2 {
+	font-size: 48px;
+	color:var(--blueberry);
+}
+.ducks-banner h5 {
+	font-size: 24px;
+	color:var(--citrus);
+}
+
+#ducks-container {
+	max-width: 850px;
+	margin:0 auto;
+}
+#ducks-container .favorite-canvas{
+    max-width: 180px;
+    max-height: 180px;
+}
+#ducks-container .favorite-canvas img{
+  max-width: 180px;
+}
+.duck-container {
+	padding:40px 30px;
+	border-bottom: solid 1px var(--line-color);
+}
+.duck-picture-and-credit {
+	text-align: center;
+}
+.duck-credit {
+	margin-top: 5px;
+	font-size:14px;
+	color:var(--blueberry);
+}
+.duck-info {
+	padding:10px 30px;
+}
+.duck-info h6{
+	font-size: 24px;
+	float:left;
+}
+.duck-info h6 span{
+	font-size: 20px;
+	color:var(--citrus);
+	padding-left: 20px;
+}
+
+.duck-title-bar {
+	max-width: 300px;
+	height: 40px;
+	border-bottom: solid 1px var(--line-color);
+}
