@@ -10,21 +10,24 @@
     }
   }
 
-  function getDuckHTML (duck) {
+  function getDuckHTML (duck) { 
     return `
        <div class="row">
-        <div class="col col-4 duck-picture-and-credit">
-          <button onclick="pd.utils.makeMoney('${duck.link}')" class="favorite-canvas shadow">
-            <img src="images/${duck.image}">
-          </button>
-          <div class="duck-credit">Source: ${duck.by}</div>
-        </div>
-        <div class="col col-8 duck-info">
-          <div class="duck-title-bar">
-            <h6>${duck.title}<span>★★★★★</span></h6>
+        <div class="col-4">
+          <div class="duck-picture-and-credit">
+            <button onclick="pd.utils.makeMoney('${duck.link}')" class="favorite-canvas shadow" style="background-image:url('images/${duck.image}')">
+            </button>
+            <div class="duck-credit">Source: ${duck.by}</div>
           </div>
-          <p class="duck-joke">${duck.joke}</p>
-          <button onclick="pd.utils.makeMoney('${duck.link}')">${duck.buy}</button>
+        </div>
+        <div class="col-8">
+          <div class="duck-info">
+            <div class="duck-title-bar">
+              <h6>${duck.title}<span>★★★★★</span></h6>
+            </div>
+            <p class="duck-joke">${duck.joke}</p>
+            <button onclick="pd.utils.makeMoney('${duck.link}')">${duck.buy}</button>
+          </div>
         </div>
       </div>
     `

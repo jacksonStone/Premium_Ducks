@@ -9,7 +9,7 @@ http.createServer(function (req, res) {
     return fetchDuckData(res)
   }
   if (url.indexOf('/node_modules') !== 0) {
-    if (url.indexOf('.js') === -1) {
+    if (url.indexOf('.js') === -1 || url.indexOf('/lib') !==-1) {
       url = '/frontend' + url
     } else {
       url = '/dist' + url

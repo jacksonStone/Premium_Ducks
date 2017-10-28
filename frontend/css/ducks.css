@@ -5,6 +5,9 @@
 	margin: 30px 0 40px 0;
 	text-align: center;
 }
+.duck-joke {
+	margin-bottom: 20px;
+}
 .ducks-banner h2 {
 	font-size: 48px;
 	color:var(--blueberry);
@@ -19,11 +22,11 @@
 	margin:0 auto;
 }
 #ducks-container .favorite-canvas{
-    max-width: 180px;
-    max-height: 180px;
-}
-#ducks-container .favorite-canvas img{
-  max-width: 180px;
+  width:180px;
+  height:180px;
+  background-size:cover; 
+  background-position:center center; 
+  background-repeat:no-repeat;
 }
 .duck-container {
 	padding:40px 30px;

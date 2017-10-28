@@ -10,8 +10,7 @@
         let duck = ducks[j]
         res += `
         <div class="col col-4" >
-            <button onclick="pd.utils.makeMoney('${duck.link}')" class="favorite-canvas shadow">
-                <img src="images/${duck.image}">
+            <button onclick="pd.utils.makeMoney('${duck.link}')" class="favorite-canvas shadow"style="background-image:url('images/${duck.image}')">
             </button>
             <h6>${duck.title}</h6>
         </div>

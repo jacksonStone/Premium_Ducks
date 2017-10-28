@@ -9,11 +9,13 @@ body {
   --apple-core:#dcc7aa;
   --grey:#dddddd;
   --duck-eyes:#55B3E7;
+  --duck-eyes-hover:#479ac6;
   --line-color:rgba(0, 0, 0, 0.08);
 }
 
 body, html {
-   height:100%
+   height:100%;
+   margin: 0;
 }
 
 #content {
@@ -33,17 +35,28 @@ body, html {
 button {
 	font-family: 'Source Sans Pro', sans-serif;
 	background-color: var(--duck-eyes);
-	height:50px;
 	font-weight: bold;
 	font-size: 20px;
 	-webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
+  border: 1px solid transparent;
+	-webkit-appearance: none;
+	padding: 10px 15px;
+	color:white;
+	border-radius: 3px;
+}
+
+button:hover {
+	background-color: var(--duck-eyes-hover);
 }
 
 h1, h2, h3, h4, h5, h6, p, a{
 	font-family: 'Source Sans Pro', sans-serif;
 	color:var(--blueberry);
+  margin-bottom: 0;
+  margin-top: 0;
 }
+
 #footer {
 	margin-left: 100px;
 	font-size: 16px;
@@ -63,4 +76,87 @@ h1, h2, h3, h4, h5, h6, p, a{
 }
 #footer .designed-by {
 	text-align: right;
+}
+
+
+/* ==== GRID SYSTEM ==== */
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 100%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media only screen and (min-width: 60em) { 
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
 }

@@ -55,7 +55,6 @@
 }
 
 .question button {
-	background-color: var(--duck-eyes);
 	margin-bottom: 50px;
 }
 
@@ -136,6 +135,7 @@
 	text-decoration-line: underline;
 	font-weight: bold;
 	font-size: 30px;
+	margin-bottom: 0;
 }
 .favorites h2{
 	color: var(--blueberry);
@@ -159,13 +159,15 @@
 }
 
 .favorite-canvas {
-	overflow: hidden;
-	max-width: 200px;
-	max-height: 200px;
+  background-size:cover; 
+  background-position:center center; 
+  background-repeat:no-repeat;
+  background-color: white;
+  width: 200px;
+	height: 200px;
 	margin:0 auto;
 	border-radius: 3px;
 	padding:0 0;
-	height:auto;
 	border:none;
 
 }

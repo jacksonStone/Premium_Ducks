@@ -25,7 +25,7 @@
 .banner-image {
 	max-height: 50px;
 	max-width: 50px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .main-banner-heading-premium {
@@ -45,7 +45,7 @@
 	position:relative;
 	list-style-type: none;
   text-align:center;
-  margin:0 10px;
+  padding-left: 0; 
 }
 
 .banner-navigation-item {
@@ -92,31 +92,29 @@
 }
 
 .corner-logo {
-    top: -86px;
-    right: -134px;
-    width: 300px;
-    height: 200px;
-    text-align: center;
-    position: fixed;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background-color: white;
+  top: -86px;
+  right: -134px;
+  width: 300px;
+  height: 200px;
+  z-index: 1000;
+  text-align: center;
+  position: fixed;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: white;
 }
 .premium-corner {
-		margin-top: 127px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration-line: underline;
-    color: var(--citrus);
+	margin-top: 127px;
+  font-size: 18px;
 }
 
 .ducks-corner {
-    margin-top: 7px;
+    margin-top: -4px;
     font-size: 36px;
     font-weight: bold;
     color: var(--blueberry);
-
 }
 
 
