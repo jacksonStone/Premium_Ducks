@@ -1,4 +1,4 @@
 window.pd = {
-	utils: {},
-	navigation: {}
-};
+  utils: {},
+  navigation: {}
+}

@@ -1,5 +1,5 @@
-describe("Home",() => {
-	it("Home page scripts", () => {
-	  assert(true); 
-	});
-});
+describe('Home', () => {
+  it('Home page scripts', () => {
+    assert(true)
+  })
+})

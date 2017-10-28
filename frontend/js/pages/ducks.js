@@ -5,12 +5,12 @@
       const duckContainer = document.createElement('div')
       duckContainer.className = 'duck-container'
       let duck = ducks[i]
-      duckContainer.innerHTML = getDuckHTML(duck);
+      duckContainer.innerHTML = getDuckHTML(duck)
       ducksContainer.appendChild(duckContainer)
     }
   }
 
-  function getDuckHTML(duck) {
+  function getDuckHTML (duck) {
     return `
        <div class="row">
         <div class="col col-4 duck-picture-and-credit">
@@ -27,14 +27,14 @@
           <button onclick="pd.utils.makeMoney('${duck.link}')">${duck.buy}</button>
         </div>
       </div>
-    `;
+    `
   }
 
-  pd.pages = pd.page || {};
-  //Export so we can test
+  pd.pages = pd.page || {}
+  // Export so we can test
   pd.pages.ducks = {
-    getDuckHTML:getDuckHTML
-  };
+    getDuckHTML: getDuckHTML
+  }
 
   pd.utils.requestDucks()
     .then(placeDucks)

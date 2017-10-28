@@ -1,5 +1,5 @@
-describe("navigation",() => {
-	it("main navigation", () => {
-		assert(2 === 2, 'Should equal 2'); 
-	});
-}); 
+describe('navigation', () => {
+  it('main navigation', () => {
+    assert(true)
+  })
+})
