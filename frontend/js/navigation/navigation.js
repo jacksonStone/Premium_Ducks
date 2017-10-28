@@ -8,7 +8,7 @@ window.pd.navigation = (()=>{
 		updatePage(page){
 			page = page || 'home';
 			exp.hightlightNavigationItem(page);
-			exp.navigate(page)
+			return exp.navigate(page)
 				.then((payload) => {
 					return exp.handleNewPage(payload, page)
 				});
@@ -25,15 +25,27 @@ window.pd.navigation = (()=>{
 				pd.utils.cachedRequest('js/pages/' + page + '.js'),
 			]);
 		},
+		getContentWindow() {
+			let contentWindow = document.getElementById('content');
+			if (contentWindow) return contentWindow;
+			//If we are in a test, the content element won't exist yet
+			contentWindow = document.createElement('div');
+			contentWindow.id = 'content';
+			document.body.appendChild(contentWindow);
+			return contentWindow;
+
+		},
 		handleNewPage(payload, page) {
 			window.scrollTo(0, 0);
 
 			const content = payload[0],
 				js = payload[1],
-				contentWindow = document.getElementById('content'),
+				contentWindow = exp.getContentWindow(),
 				newContentBody = document.createElement('div');
 			
 			newContentBody.innerHTML = content;
+
+
 			while (contentWindow.firstChild) {
     		contentWindow.removeChild(contentWindow.firstChild);
 			}

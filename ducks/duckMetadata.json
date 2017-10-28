@@ -6,7 +6,7 @@
     "joke": "Does your code need to a medival cleansing? Well here’s the duck for the job.",
     "link": "http://amzn.to/2ztYbkX",
     "by": "Duckshop",
-    "buy": "Buy It!",
+    "buy": "Buy It",
     "stars": 5
   },
   {
@@ -15,7 +15,7 @@
     "link": "http://amzn.to/2yGuMqm",
     "joke": "Need a bit of luck while swimming through your code? It doesn't get better than Captain Quack.",
     "by": "Celebriducks",
-    "buy": "Ship it!",
+    "buy": "Ship it",
     "title": "Captain Quack",
     "stars": 5
   },
@@ -26,7 +26,7 @@
     "joke": "Does your code make a duck wish he had a stiff drink? The Bavarian comes prepared.",
     "by": "Duckshop",
     "title": "The Bavarian",
-    "buy": "Austrinken!",
+    "buy": "Austrinken",
     "stars": 5
   },
     {
@@ -35,7 +35,7 @@
     "joke": "Are you the captian of your code? Live long and prosper with this captain by your side.",
     "by": "Celebriducks",
     "link": "http://amzn.to/2yyXWbH",
-    "buy": "Target Aquired!",
+    "buy": "Target Aquired",
     "title":"Mr. Squawk"
   },
     {
@@ -44,7 +44,7 @@
     "joke": "Here's a duck that's as safe a play as your Java code. For people who use the acronym KISS a lot.",
     "by": "Duckshop",
     "link": "http://amzn.to/2yA3B18",
-    "buy": "Go old school",
+    "buy": "Keep it simple",
     "title": "The Classic"
   },
   {
@@ -53,7 +53,7 @@
     "joke": "This Duck has seen one too many PHP codebases, but maybe you have too! Go crazy together!",
     "by": "Duckshop",
     "link": "http://amzn.to/2xXiLJz",
-    "buy": "Go Crazy!",
+    "buy": "Go Crazy",
     "title":"The Disturbed"
   },
   {
@@ -62,16 +62,16 @@
     "joke": "If you view coding as an art and a tool of self discovery this cultured duck is right there with you.",
     "by": "Duckshop",
     "link": "http://amzn.to/2gXh60O",
-    "buy": "Wee Wee!",
+    "buy": "Wee Wee",
     "title": "Monsieur Duck"
   },
   {
     "name": "sigmond",
     "image": "sigmond.jpg",
-    "joke": "Bugs so bad you need to see a shrink? Or maybe an _EGO_ boost? This duck can help.",
+    "joke": "Bugs so bad you need to see a shrink? Or maybe an <i>ego</i> boost? This duck can help.",
     "by": "Duckshop",
     "link": "http://amzn.to/2yG0xzK",
-    "buy": "Start blaming your mother!",
+    "buy": "Start blaming your mother",
     "title":"Sigmond"
   },{
     "name": "ainthavenit",
@@ -79,11 +79,12 @@
     "image": "ainthavenit.jpg",
     "by": "Duckshop",
     "link": "http://amzn.to/2yG0HXS",
-    "buy": "Having it?",
+    "buy": "Have it",
     "title": "Ain't Having it"
   },
   {
     "name": "surgeon",
+    "title": "The Surgeon",
     "joke": "Do you have to tread lightly in a legacy systems with no tests? This duck's steady hands can help.",
     "image": "surgeon.jpg",
     "by": "Duckshop",
@@ -92,6 +93,7 @@
   },
   {
     "name": "donald",
+    "title": "The Donald",
     "image": "donald.jpg",
     "joke": "Sprint points are down? Of course they are. They're awful. The worst. Start coding again! Big League!",
     "by": "Celebriducks",
@@ -99,28 +101,33 @@
     "link": "http://amzn.to/2xXeHJm"
   },{
     "name": "duckonator",
+    "title": "The Duckonator",
     "image": "terminator.jpg",
-    "joke": "\/\/TODO:: Insert: \"I'll be back!\" reference here.",
+    "joke": "\/\/TODO :: Insert: \"I'll be back!\" reference here.",
     "by": "Celebriducks",
     "buy": "Obtain it",
     "link": "http://amzn.to/2yGtVpm"
   },
   {
     "name": "bat",
+    "title": "Batduck",
     "image": "batman.png",
-    "joke": "Don't be the programmer your codebase deserves. Be the one it needs you to be.",
-    "buy": "Embrace Vigilanty Justice",
-    "link": "http://amzn.to/2gYfOT5"
+    "joke": "Don't be the programmer your codebase deserves. Be the one it needs.",
+    "buy": "Embrace vigilanty justice",
+    "link": "http://amzn.to/2gYfOT5",
+    "by": "Paladone"
   },
   {
     "name": "holmes",
     "image": "holmes.jpg",
+    "title": "Holmes",
     "joke": "Does fixing a bug in your codebase involve following a trail of clues? This duck is the best in the biz.",
-    "buy": "Deduce it!",
+    "buy": "Deduce it",
     "by": "Duckshop",
     "link": "http://amzn.to/2yzoV75"
   }, {
     "name": "mozart",
+    "title": "Mozart",
     "image": "mozart.jpg",
     "joke": "Are you a functional programmer? Well few can compose better than this duck!",
     "buy": "Orchestrate a purchase",
@@ -129,9 +136,10 @@
   },
   {
     "name": "potter",
+    "title": "Mr. Ponder",
     "image": "potter.jpg",
     "joke":"Ever wish you had a wand to wave away the bugs? This duck brings his own.",
-    "buy": "Accio Duck!",
+    "buy": "Accio Duck",
     "by": "Celebriducks",
     "link": "http://amzn.to/2xXTPS8"
   }

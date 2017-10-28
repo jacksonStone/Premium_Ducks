@@ -26,6 +26,7 @@ fs.watch('dist', { recursive: true, encoding: 'utf8' }, (eventType, filePath) =>
 		  	
 		  }
 		  if(stderr || err) {
+		  	console.log(stdout);
 		  	console.log("\x1b[31m FAILURES!（╯° □ °）╯︵ ┻━┻\x1b[0m");
 		  }
 		});
