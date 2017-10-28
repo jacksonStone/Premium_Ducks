@@ -5,37 +5,62 @@ const URL = require('url')
 
 http.createServer(function (req, res) {
   let url = req.url !== '/' ? req.url : '/pages/index.html'
-  if (url.indexOf('/ducks') === 0) {
-    return fetchDuckData(res)
-  }
-  if (url.indexOf('/node_modules') !== 0) {
-    if (url.indexOf('.js') === -1 || url.indexOf('/lib') !==-1) {
-      url = '/frontend' + url
-    } else {
-      url = '/dist' + url
-    }
-  }
-  url = URL.parse(url).pathname
-  const trueURL = path.resolve(__dirname, '.' + url)
+  let urlParts = url.split('/')
+  console.log(urlParts);
+  // Bad Url
+  if (urlParts.length < 2) return res.end()
+  fileType = urlParts[1]
+  console.log(fileType);
+  // Bad url
+  console.log(router[fileType]);
+  if (!router[fileType]) return res.end()
+  // Nice Try!
+  if (urlParts.indexOf('..')!==-1) return res.end()
+
+  const resourceDetails = router[fileType](url)
+  return fetchResource(resourceDetails, res)
+}).listen(8001)
+
+function fetchResource (resourceDetails, res) {
+  const trueURL = handleURL(resourceDetails.url)
   fs.readFile(trueURL, (err, data) => {
     if (!data || err) {
       return res.end()
     }
-    res.writeHead(200, {'Content-Length': data.length})
-    res.write(data)
-    res.end()
-  })
-}).listen(8001)
-
-function fetchDuckData (res) {
-  const url = URL.parse('/ducks/duckMetadata.json').pathname
-  const trueURL = path.resolve(__dirname, '.' + url)
-  fs.readFile(trueURL, (err, data) => {
-    if (err) {
-      return res.end()
+    const headers = {'Content-Length': data.length}
+    if (resourceDetails['Content-Type']) {
+      headers['Content-Type'] = resourceDetails['Content-Type']
     }
-    res.writeHead(200, {'Content-Length': data.length})
+    res.writeHead(200, headers)
     res.write(data)
     res.end()
   })
+}
+
+const router = {
+  'js': (url) => {
+    if (url.indexOf('/lib') !== -1) {
+      url = '/frontend' + url
+    } else {
+      url = '/dist' + url
+    }
+    return { url: url, 'Content-Type': 'application/javascript' }
+  },
+  'pages': (url) => {
+    return { url: '/frontend' + url, 'Content-Type': 'text/html' }
+  },
+  'css': (url) => {
+    return { url: '/frontend' + url, 'Content-Type': 'text/css' }
+  },
+  'images': (url) => {
+    return { url: '/frontend' + url }
+  },
+  'ducks': () => {
+    return { url: '/ducks/duckMetadata.json' }
+  }
+}
+
+function handleURL (url) {
+  url = URL.parse(url).pathname
+  return path.resolve(__dirname, '.' + url)
 }
