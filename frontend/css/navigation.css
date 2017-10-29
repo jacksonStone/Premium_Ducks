@@ -17,28 +17,15 @@
 }
 
 .banner-heading {
-	padding: 20px 0 0 0;
-	text-align: center;
+	padding: 10px;
+	text-align: left;
 	border: 0;
-}
-
-.banner-image {
-	max-height: 50px;
-	max-width: 50px;
-	margin-bottom: 10px;
-}
-
-.main-banner-heading-premium {
-	text-decoration: underline var(--citrus);
-	color:var(--citrus);
-	font-family: inherit;
-	margin-bottom:0;
 }
 
 .main-banner-heading {
 	color:var(--blueberry);
 	font-family: inherit;
-	text-decoration: none!important;
+	text-decoration: none; 
 }
 
 .banner-navigation {
@@ -90,6 +77,11 @@
 .banner-navigation-item .coming-soon {
 	color: rgba(85, 179, 231, .45);
 }
+
+.banner-navigation-item .coming-soon:hover {
+	color: rgba(85, 179, 231, .45);
+}
+
 .banner-navigation-item .coming-soon::before {
 	color: rgba(252, 205, 88, .45);
 }
@@ -112,7 +104,20 @@
 	color:var(--citrus);
 }
 
+.banner-heading {
+	padding: 20px 0 0 0;
+	text-align: center;
+}
 
+.banner-image {
+	max-height: 50px;
+	max-width: 50px;
+	margin-bottom: 10px;
+}
+
+.main-banner-heading {
+	text-align: center; 
+}
 
 .corner-logo {
   top: -86px;
@@ -134,12 +139,42 @@
 }
 
 .ducks-corner {
-    margin-top: -4px;
-    font-size: 36px;
-    font-weight: bold;
-    color: var(--blueberry);
+  margin-top: -4px;
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--blueberry);
 }
 
+.mobile-navigation {
+  height: 70px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  text-align: center;
+}
+
+.mobile-navigation .banner-navigation-item {
+	border:none;
+}
+
+.mobile-navigation .banner-navigation-item a {
+  padding: 12px 0;
+  border-right: 1px solid var(--line-color);
+  margin: 10px 0;
+  width: 100%;
+}
+.mobile-navigation .banner-navigation-item .left-bar {
+    border-left: 1px solid var(--line-color);
+}
+.mobile-navigation .banner-navigation-item a::before {
+   top: 7px;
+}
+.mobile-navigation .banner-heading{
+	padding: 10px 0 0 0;
+}
 
 
 

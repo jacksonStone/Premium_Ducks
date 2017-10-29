@@ -1,6 +1,7 @@
 #ducks {
 	font-family: 'Source Sans Pro', sans-serif;
 }
+
 .ducks-banner {
 	margin: 30px 0 40px 0;
 	text-align: center;
@@ -48,6 +49,7 @@
 .duck-info h6{
 	font-size: 24px;
 	float:left;
+	margin: 0 auto;
 }
 .duck-info h6 span{
 	font-size: 20px;
@@ -57,9 +59,10 @@
 
 .duck-title-bar {
 	max-width: 300px;
-	height: 50px;
+	height: 60px;
 	border-bottom: solid 2px var(--duck-eyes);
 	clear: both;
+	margin: 0 auto;
 }
 
 .duck-info p {
@@ -67,9 +70,29 @@
 	color:var(--blueberry);
 	clear: both;
 	margin-top: 20px;
-	max-width: 350px;
+	max-width: 300px;
+	margin-right:auto;
+	margin-left: auto;
 }
 
 .duck-info button {
 	font-size:18px;
+	margin: 0 auto;
+	display:block;
+	min-width: 150px;
+}
+
+@media only screen and (min-width: 65em) { 
+	.duck-info button {
+		display:inline;
+	}
+	.duck-title-bar {
+		margin: 0;
+		height: 40px;
+	}
+	.duck-info p {
+		max-width: 350px;
+		margin-right: 0;
+		margin-left: 0;
+	}
 }

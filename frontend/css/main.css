@@ -19,7 +19,7 @@ body, html {
 }
 
 #content {
-	margin-left:100px;
+  margin: 70px 0 0 0;
 	min-height: 100%;
 }
 
@@ -56,6 +56,9 @@ h1, h2, h3, h4, h5, h6, p, a{
 	color:var(--blueberry);
   margin-bottom: 0;
   margin-top: 0;
+  width:90%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #footer {
@@ -106,13 +109,52 @@ h1, h2, h3, h4, h5, h6, p, a{
   width: 100%;
 }
 
+.col-2-sm {
+  width: 16.66%;
+}
+.col-5-sm {
+  width: 41.66%
+}
+
 .row::after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
-@media only screen and (min-width: 60em) { 
+.only-desktop {
+  display:none;
+}
+
+#footer {
+  margin: 0;
+}
+.only-mobile {
+  display: block;
+}
+
+
+@media only screen and (min-width: 65em) { 
+  .only-desktop {
+    display:block;
+  }
+  #content {
+    margin: 0 0 0 100px;
+  }
+  #footer {
+    margin: 0 0 0 100px;
+  }
+  .only-mobile {
+    display: none;
+  }
+  h1, h2, h3, h4, h5, h6, p, a{
+    width:100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 65em) { 
   .col-1 {
     width: 8.33%;
   }

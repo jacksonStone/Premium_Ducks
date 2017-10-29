@@ -3,8 +3,13 @@
   text-align: center;
   font-size: 20px;
   color: var(--blueberry);
+  margin-top: 90px;
 }
-
+@media only screen and (min-width: 65em) {
+	.home {
+		margin-top: 0;
+	}
+}
 .home-page-banner {
 	text-align: center;
 	font-size: 20px;
@@ -109,8 +114,11 @@
 }
 
 .left-page {
-	border-right:1px solid white;
-	padding-bottom: 20px;
+	border-right: none;
+	padding-bottom: 40px;
+	max-width:80%;
+	margin: 0 auto 40px auto;
+	border-bottom: 1px solid white;
 }
 .right-page img {
 	width:80px;
@@ -183,6 +191,18 @@
 }
 .favorites-button:hover {
 	background-color: var(--citrus-hover);
+}
+
+
+@media only screen and (min-width: 65em) {  
+	.left-page {
+		border-right:1px solid white;
+		border-bottom: none;
+		padding-bottom: 20px;
+		max-width:100%;
+		margin: 0 auto 0 auto;
+	}
+
 }
 
 
