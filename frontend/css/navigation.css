@@ -79,7 +79,7 @@
 
 .banner-navigation-item a::before{
 	font-size:9px;
-	content:"premium";
+	content:"Premium";
 	color: var(--citrus);
 	position:absolute;
 	line-height: 1em;
@@ -87,9 +87,32 @@
 	top: 22px;
 }
 
+.banner-navigation-item .coming-soon {
+	color: rgba(85, 179, 231, .45);
+}
+.banner-navigation-item .coming-soon::before {
+	color: rgba(252, 205, 88, .45);
+}
+
+.coming-soon::after {
+	font-size:16px;
+	font-weight:bold;
+	content:"Coming Soon";
+	color: var(--duck-eyes);
+	position:absolute;
+	line-height: 1em;
+	left: calc(50% - 40px);
+	 -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+	top: 22px;
+}
+
 .active-navigation a{
 	color:var(--citrus);
 }
+
+
 
 .corner-logo {
   top: -86px;

@@ -54,6 +54,9 @@ const router = {
   },
   'ducks': () => {
     return { url: '/ducks/duckMetadata.json' }
+  },
+  'favicon.ico': () => {
+    return { url: '/frontend/favicon.ico' }
   }
 }
 
