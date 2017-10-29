@@ -3,7 +3,7 @@
     "name": "bishop",
     "image": "bishop.jpg",
     "title": "The Bishop",
-    "joke": "Does your code need to a medival cleansing? Well here’s the duck for the job.",
+    "joke": "Does your code need to a medieval cleansing? Well here’s the duck for the job.",
     "link": "http://amzn.to/2ztYbkX",
     "by": "Duckshop",
     "buy": "Buy It",
@@ -32,7 +32,7 @@
     {
     "name": "squawk",
     "image": "squawk.jpg",
-    "joke": "Are you the captian of your code? Live long and prosper with this captain by your side.",
+    "joke": "Are you the captain of your code? Live long and prosper with this duck by your side.",
     "by": "Celebriducks",
     "link": "http://amzn.to/2yyXWbH",
     "buy": "Target Aquired",
@@ -59,7 +59,7 @@
   {
     "name": "french",
     "image": "french.jpg",
-    "joke": "If you view coding as an art and a tool of self discovery this cultured duck is right there with you.",
+    "joke": "If you view coding as an art and a tool of self-discovery this cultured duck is right there with you.",
     "by": "Duckshop",
     "link": "http://amzn.to/2gXh60O",
     "buy": "Wee Wee",
@@ -85,7 +85,7 @@
   {
     "name": "surgeon",
     "title": "The Surgeon",
-    "joke": "Do you have to tread lightly in a legacy systems with no tests? This duck's steady hands can help.",
+    "joke": "Do you have to tread lightly in legacy systems with no tests? This duck's steady hands can help.",
     "image": "surgeon.jpg",
     "by": "Duckshop",
     "buy": "Cut to the chase",
@@ -95,7 +95,7 @@
     "name": "donald",
     "title": "The Donald",
     "image": "donald.jpg",
-    "joke": "Sprint points are down? Of course they are. They're awful. The worst. Start coding again! Big League!",
+    "joke": "Are sprint points down? Of course they are. They're awful. The worst. Start coding again! Big League!",
     "by": "Celebriducks",
     "buy": "Start Winning",
     "link": "http://amzn.to/2xXeHJm"
@@ -129,7 +129,7 @@
     "name": "mozart",
     "title": "Mozart",
     "image": "mozart.jpg",
-    "joke": "Are you a functional programmer? Well few can compose better than this duck!",
+    "joke": "Are you a functional programmer? Well, few can <i>compose</i> better than this duck!",
     "buy": "Orchestrate a purchase",
     "by": "Duckshop",
     "link": "http://amzn.to/2xXbFEN"

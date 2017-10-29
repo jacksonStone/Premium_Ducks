@@ -28,6 +28,7 @@ function fetchResource (resourceDetails, res) {
     if (resourceDetails['Content-Type']) {
       headers['Content-Type'] = resourceDetails['Content-Type']
     }
+    headers['Cache-Control'] = 'max-age=3600';
     res.writeHead(200, headers)
     res.write(data)
     res.end()
