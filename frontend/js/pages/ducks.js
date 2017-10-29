@@ -10,7 +10,7 @@
     }
   }
 
-  function getDuckHTML (duck) { 
+  function getDuckHTML (duck) {
     return `
        <div class="row">
         <div class="col-4">

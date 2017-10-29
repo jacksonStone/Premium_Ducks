@@ -1,0 +1,29 @@
+.faq-questions {
+	max-width: 650px;
+	margin: 0 auto;
+	font-size: 24px;
+	text-align: center;
+}
+.faq-questions h6 {
+	color:var(--duck-eyes);
+	text-align: center;
+	font-size: 24px;
+}
+.faq-questions p {
+	text-align: left;
+}
+.faq-questions .centered {
+	text-align: center;
+}
+
+.faq-question {
+	margin:40px 0;
+}
+.faq-question h6 {
+	margin-bottom: 20px;
+}
+
+.faq-question p {
+	margin-bottom: 20px;
+	font-size: 18px;
+}

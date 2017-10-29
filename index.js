@@ -6,16 +6,13 @@ const URL = require('url')
 http.createServer(function (req, res) {
   let url = req.url !== '/' ? req.url : '/pages/index.html'
   let urlParts = url.split('/')
-  console.log(urlParts);
   // Bad Url
   if (urlParts.length < 2) return res.end()
-  fileType = urlParts[1]
-  console.log(fileType);
+  const fileType = urlParts[1]
   // Bad url
-  console.log(router[fileType]);
   if (!router[fileType]) return res.end()
   // Nice Try!
-  if (urlParts.indexOf('..')!==-1) return res.end()
+  if (urlParts.indexOf('..') !== -1) return res.end()
 
   const resourceDetails = router[fileType](url)
   return fetchResource(resourceDetails, res)
