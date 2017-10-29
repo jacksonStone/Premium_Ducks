@@ -8,7 +8,9 @@
     "test_specific": "karma start --single-run --browsers ChromeHeadless ./tasks/karma.runspecific.js",
     "watch_frontend": "node ./tasks/test-watch.js",
     "lint": "eslint .",
+    "start": "node index",
     "build": "babel frontend -d dist",
+    "postinstall": "npm run build",
     "build_watch": "babel frontend -d dist --watch --skip-initial-build"
   },
   "repository": {
