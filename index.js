@@ -16,7 +16,7 @@ http.createServer(function (req, res) {
 
   const resourceDetails = router[fileType](url)
   return fetchResource(resourceDetails, res)
-}).listen(8001)
+}).listen(process.env.PORT || 5000)
 
 function fetchResource (resourceDetails, res) {
   const trueURL = handleURL(resourceDetails.url)
