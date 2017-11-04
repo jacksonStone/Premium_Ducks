@@ -13,6 +13,9 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     browsers: ['ChromeHeadless'],
+    proxies: {
+      '/': 'http://localhost:5000/'
+    },
     autoWatch: false,
     // singleRun: false, // Karma captures browsers, runs the tests and exits
     concurrency: Infinity

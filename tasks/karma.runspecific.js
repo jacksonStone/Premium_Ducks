@@ -4,7 +4,7 @@ const path = process.argv[process.argv.length - 1]
 module.exports = function (config) {
   config.set({
     frameworks: ['mocha', 'chai'],
-    basePath: '../frontend',
+    basePath: '../dist',
     files: [
       'js/main.js',
       'js/utils/*.js',
@@ -14,7 +14,7 @@ module.exports = function (config) {
     ],
     reporters: ['progress'],
     proxies: {
-      '/': 'http://localhost:8001/'
+      '/': 'http://localhost:5000/'
     },
     port: 9876, // karma web server port
     colors: true,

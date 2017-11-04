@@ -4,12 +4,15 @@
   "description": "Hit the ground running with fast iteration loops",
   "main": "index.js",
   "scripts": {
-    "test": "npm run build && karma start --single-run --browsers ChromeHeadless ./tasks/karma.conf.js",
+    "test": "npm run build_no_zip && karma start --single-run --browsers ChromeHeadless ./tasks/karma.conf.js",
     "test_specific": "karma start --single-run --browsers ChromeHeadless ./tasks/karma.runspecific.js",
     "watch_frontend": "node ./tasks/test-watch.js",
     "lint": "eslint .",
     "start": "node index",
-    "build": "babel frontend -d dist",
+    "copy": "node tasks/copy.js",
+    "gzip": "node tasks/gzip.js",
+    "build": "npm run copy && babel dist -d dist && npm run gzip",
+    "build_no_zip": "npm run copy && babel dist -d dist",
     "postinstall": "npm run build",
     "build_watch": "babel frontend -d dist --watch --skip-initial-build"
   },

@@ -28,36 +28,51 @@ function fetchResource (resourceDetails, res) {
     if (resourceDetails['Content-Type']) {
       headers['Content-Type'] = resourceDetails['Content-Type']
     }
-    headers['Cache-Control'] = 'max-age=3600';
+    if (resourceDetails['Content-Encoding']) {
+      headers['Content-Encoding'] = resourceDetails['Content-Encoding']
+    }
+    headers['Cache-Control'] = 'max-age=86400'
     res.writeHead(200, headers)
     res.write(data)
     res.end()
   })
 }
-
+// Put back content types
 const router = {
   'js': (url) => {
-    if (url.indexOf('/lib') !== -1) {
-      url = '/frontend' + url
-    } else {
-      url = '/dist' + url
+    return {
+      url: '/dist' + url,
+      'Content-Encoding': 'gzip',
+      'Content-Type': 'application/javascript'
     }
-    return { url: url, 'Content-Type': 'application/javascript' }
   },
   'pages': (url) => {
-    return { url: '/frontend' + url, 'Content-Type': 'text/html' }
+    return {
+      url: '/dist' + url,
+      'Content-Encoding': 'gzip',
+      'Content-Type': 'text/html'
+    }
   },
   'css': (url) => {
-    return { url: '/frontend' + url, 'Content-Type': 'text/css' }
+    return {
+      url: '/dist' + url,
+      'Content-Encoding': 'gzip',
+      'Content-Type': 'text/css'
+    }
   },
   'images': (url) => {
-    return { url: '/frontend' + url }
+    return {
+      url: '/dist' + url,
+      'Content-Encoding': 'gzip' }
   },
   'ducks': () => {
-    return { url: '/ducks/duckMetadata.json' }
+    return {
+      url: '/ducks/duckMetadata.json' }
   },
   'favicon.ico': () => {
-    return { url: '/frontend/favicon.ico' }
+    return {
+      url: '/dist/favicon.ico',
+      'Content-Encoding': 'gzip' }
   }
 }
 
