@@ -7,7 +7,6 @@
     "node": "8.6.0"
   },
   "scripts": {
-    "test": "npm run build_no_zip && karma start --single-run --browsers ChromeHeadless ./tasks/karma.conf.js",
     "test_specific": "karma start --single-run --browsers ChromeHeadless ./tasks/karma.runspecific.js",
     "watch_frontend": "node ./tasks/test-watch.js",
     "lint": "eslint .",
