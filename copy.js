@@ -1,7 +1,7 @@
 const fileUtils = require('./fileUtils')
 const recursiveOpToFile = fileUtils.recursiveOpToFile
 const handleURL = fileUtils.handleURL
-const directory = '/frontend'
+const directory = './frontend'
 const fs = require('fs')
 
 function copy (path, fileData) {
@@ -10,6 +10,7 @@ function copy (path, fileData) {
     console.log(parts);
     parts[1] = 'dist'
     const dest = handleURL(parts.join('/'))
+    console.log(path);
     const trueURL = handleURL(path)
     return copyFile(trueURL, dest).then(resolve)
   })
