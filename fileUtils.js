@@ -7,6 +7,7 @@ function handleURL (url) {
   console.log('******')
   console.log(url);
   console.log(path.resolve(__dirname, url));
+  console.log(__dirname);
   return path.resolve(__dirname, url)
 }
 
@@ -37,6 +38,7 @@ function recursiveOpToFile (currentPath, callback) {
             if (err && err.code === 'EISDIR') {
               return mkdir(newPath)
                 .then(() => {
+                  console.log('made Directory: ' + newPath);
                   return recursiveOpToFile(newPath, callback)
                 }).then(() => {
                   resolve()

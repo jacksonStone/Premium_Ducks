@@ -7,8 +7,9 @@ const fs = require('fs')
 function copy (path, fileData) {
   return new Promise((resolve, reject) => {
     const parts = path.split('/')
-    console.log(parts);
+    console.log('Inside Copy')
     parts[1] = 'dist'
+    console.log(parts);
     const dest = handleURL(parts.join('/'))
     console.log(path);
     const trueURL = handleURL(path)
