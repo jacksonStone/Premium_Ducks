@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
-Allow: /sitemap.htm
+Allow: /#ducks
+Allow: /#faq
 Sitemap: https://www.premiumducks.com/sitemap.xml
