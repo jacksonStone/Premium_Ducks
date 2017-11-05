@@ -35,11 +35,7 @@
   "homepage": "https://github.com/jacksonStone/TDD_Framework#readme",
   "dependencies": {
     "babel-cli": "^6.26.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
-    "chai": "^4.1.2",
-    "es6-promise": "^4.1.1",
-    "mocha": "^4.0.1"
+    "babel-preset-env": "^1.6.0"
   },
   "devDependencies": {
     "eslint": "^4.9.0",
@@ -48,6 +44,8 @@
     "eslint-plugin-node": "^5.2.0",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
     "karma": "^1.7.1",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^2.2.0",
