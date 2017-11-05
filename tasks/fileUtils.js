@@ -5,9 +5,9 @@ const path = require('path')
 function handleURL (url) {
   url = URL.parse(url).pathname
   console.log('******')
-  console.log(url);
-  console.log(path.resolve(__dirname, url));
-  console.log(__dirname);
+  console.log(url)
+  console.log(path.resolve(__dirname, url))
+  console.log(__dirname)
   return path.resolve(__dirname, url)
 }
 
@@ -38,7 +38,7 @@ function recursiveOpToFile (currentPath, callback) {
             if (err && err.code === 'EISDIR') {
               return mkdir(newPath)
                 .then(() => {
-                  console.log('made Directory: ' + newPath);
+                  console.log('made Directory: ' + newPath)
                   return recursiveOpToFile(newPath, callback)
                 }).then(() => {
                   resolve()

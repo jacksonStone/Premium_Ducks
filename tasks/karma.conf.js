@@ -1,12 +1,13 @@
 module.exports = function (config) {
   config.set({
     frameworks: ['mocha', 'chai'],
-    basePath: '../dist/js',
+    basePath: '../frontend/js',
     files: [
       'main.js',
       'utils/*.js',
       'navigation/*.js',
-      'pages/*.js'
+      'pages/*.js',
+      '**/tests/*.js'
     ],
     reporters: ['progress'],
     port: 9876, // karma web server port

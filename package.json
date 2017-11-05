@@ -7,15 +7,16 @@
     "node": "8.6.0"
   },
   "scripts": {
+    "test": "karma start --single-run --browsers ChromeHeadless ./tasks/karma.conf.js",
     "test_specific": "karma start --single-run --browsers ChromeHeadless ./tasks/karma.runspecific.js",
     "watch_frontend": "node ./tasks/test-watch.js",
     "lint": "eslint .",
     "start": "node index",
-    "copy": "node copy.js",
-    "gzip": "node gzip.js",
-    "clean": "node clean.js",
+    "start_dev": "node index testing",
+    "copy": "node tasks/copy.js",
+    "gzip": "node tasks/gzip.js",
+    "clean": "node tasks/clean.js",
     "build": "npm run clean && npm run copy && babel dist -d dist && npm run gzip",
-    "build_no_zip": "npm run copy && babel dist -d dist",
     "postinstall": "npm run build",
     "build_watch": "babel frontend -d dist --watch --skip-initial-build"
   },

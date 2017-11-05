@@ -2,7 +2,14 @@ const http = require('http')
 const fs = require('fs')
 const path = require('path')
 const URL = require('url')
-const version = '1'
+const args = process.argv.slice(2)
+
+let isTesting = false
+if (args.indexOf('testing') !== -1) {
+  isTesting = true
+}
+
+let frontend = isTesting ? '/frontend' : '/dist'
 
 http.createServer(function (req, res) {
   let url = req.url !== '/' ? req.url : '/pages/index.html'
@@ -29,10 +36,12 @@ function fetchResource (resourceDetails, res) {
     if (resourceDetails['Content-Type']) {
       headers['Content-Type'] = resourceDetails['Content-Type']
     }
-    if (resourceDetails['Content-Encoding']) {
+    if (!isTesting && resourceDetails['Content-Encoding']) {
       headers['Content-Encoding'] = resourceDetails['Content-Encoding']
     }
-    headers['Cache-Control'] = 'max-age=604800'
+    if (!isTesting) {
+      headers['Cache-Control'] = 'max-age=604800'
+    }
     res.writeHead(200, headers)
     res.write(data)
     res.end()
@@ -42,28 +51,28 @@ function fetchResource (resourceDetails, res) {
 const router = {
   'js': (url) => {
     return {
-      url: '/dist' + url,
+      url: frontend + url,
       'Content-Encoding': 'gzip',
       'Content-Type': 'application/javascript'
     }
   },
   'pages': (url) => {
     return {
-      url: '/dist' + url,
+      url: frontend + url,
       'Content-Encoding': 'gzip',
       'Content-Type': 'text/html'
     }
   },
   'css': (url) => {
     return {
-      url: '/dist' + url,
+      url: frontend + url,
       'Content-Encoding': 'gzip',
       'Content-Type': 'text/css'
     }
   },
   'images': (url) => {
     return {
-      url: '/dist' + url,
+      url: frontend + url,
       'Content-Encoding': 'gzip' }
   },
   'ducks': () => {
@@ -72,7 +81,7 @@ const router = {
   },
   'misc': (url) => {
     return {
-      url: '/dist' + url,
+      url: frontend + url,
       'Content-Encoding': 'gzip' }
   }
 }

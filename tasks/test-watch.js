@@ -2,7 +2,8 @@ const fs = require('fs')
 const { exec } = require('child_process')
 
 console.log('Watching: \x1b[32mfrontend/\x1b[0m')
-fs.watch('dist', { recursive: true, encoding: 'utf8' }, (eventType, filePath) => {
+fs.watch('frontend', { recursive: true, encoding: 'utf8' }, (eventType, filePath) => {
+  if (filePath.indexOf('.js') === -1) return
   if (filePath) {
     let testFilePath = filePath.split('/')
     let arg = filePath
@@ -29,18 +30,4 @@ fs.watch('dist', { recursive: true, encoding: 'utf8' }, (eventType, filePath) =>
       }
     })
   }
-})
-
-const { spawn } = require('child_process')
-const buildWatch = spawn('npm', ['run', 'build_watch'], {detached: false})
-buildWatch.stdout.on('data', (data) => {
-  console.log(`Babel: ${data}`)
-})
-
-buildWatch.stderr.on('data', (data) => {
-  console.log(`Babel Error: ${data}`)
-})
-
-buildWatch.on('close', (code) => {
-  console.log(`Babel Closed: ${code}`)
 })

@@ -4,7 +4,7 @@ const path = process.argv[process.argv.length - 1]
 module.exports = function (config) {
   config.set({
     frameworks: ['mocha', 'chai'],
-    basePath: '../dist',
+    basePath: '../frontend',
     files: [
       'js/main.js',
       'js/utils/*.js',

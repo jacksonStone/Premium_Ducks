@@ -6,7 +6,7 @@
       duckContainer.className = 'duck-container'
       let duck = ducks[i]
       duckContainer.innerHTML = getDuckHTML(duck)
-      ducksContainer.appendChild(duckContainer)    
+      ducksContainer.appendChild(duckContainer)
     }
   }
 
