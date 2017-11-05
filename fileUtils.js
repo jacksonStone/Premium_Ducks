@@ -4,7 +4,7 @@ const path = require('path')
 
 function handleURL (url) {
   url = URL.parse(url).pathname
-  return path.resolve(__dirname, url)
+  return path.resolve(__dirname, '.' + url)
 }
 
 function mkdir (path) {
