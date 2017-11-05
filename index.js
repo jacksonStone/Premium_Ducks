@@ -2,6 +2,7 @@ const http = require('http')
 const fs = require('fs')
 const path = require('path')
 const URL = require('url')
+const version = '1'
 
 http.createServer(function (req, res) {
   let url = req.url !== '/' ? req.url : '/pages/index.html'
@@ -31,6 +32,7 @@ function fetchResource (resourceDetails, res) {
     if (resourceDetails['Content-Encoding']) {
       headers['Content-Encoding'] = resourceDetails['Content-Encoding']
     }
+    headers['ETag'] = version;
     headers['Cache-Control'] = 'max-age=86400'
     res.writeHead(200, headers)
     res.write(data)
