@@ -8,7 +8,6 @@ function copy (path, fileData) {
   const parts = path.split('/')
   parts[1] = 'dist'
   const dest = handleURL(parts.join('/'))
-
   return new Promise(function (resolve, reject) {
     fs.writeFile(dest, fileData, (err) => {
       if(err) reject(err)
