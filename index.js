@@ -32,8 +32,7 @@ function fetchResource (resourceDetails, res) {
     if (resourceDetails['Content-Encoding']) {
       headers['Content-Encoding'] = resourceDetails['Content-Encoding']
     }
-    headers['ETag'] = version;
-    headers['Cache-Control'] = 'max-age=86400'
+    headers['Cache-Control'] = 'max-age=604800'
     res.writeHead(200, headers)
     res.write(data)
     res.end()
