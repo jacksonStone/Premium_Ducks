@@ -1,7 +1,7 @@
 const fileUtils = require('./fileUtils')
 const recursiveOpToFile = fileUtils.recursiveOpToFile
 const handleURL = fileUtils.handleURL
-const directory = '../dist'
+const directory = 'dist'
 const fs = require('fs')
 const zlib = require('zlib')
 

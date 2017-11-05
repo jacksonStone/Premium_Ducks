@@ -24,7 +24,6 @@
       if (!pd._cachedRequests) {
         pd._cachedRequests = {}
       }
-      console.log(url);
       const cachedValue = pd._cachedRequests[url]
       if (cachedValue !== undefined) {
         return Promise.resolve(cachedValue)
