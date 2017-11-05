@@ -9,9 +9,9 @@ http.createServer(function (req, res) {
   let urlParts = url.split('/')
   // Bad Url
   if (urlParts.length < 2) return res.end()
-  const fileType = urlParts[1]
-  // Bad url
-  if (!router[fileType]) return res.end()
+  let fileType = urlParts[1]
+
+  if (!router[fileType]) fileType = 'misc'
   // Nice Try!
   if (urlParts.indexOf('..') !== -1) return res.end()
 
@@ -70,9 +70,9 @@ const router = {
     return {
       url: '/ducks/duckMetadata.json' }
   },
-  'favicon.ico': () => {
+  'misc': (url) => {
     return {
-      url: '/dist/favicon.ico',
+      url: '/dist' + url,
       'Content-Encoding': 'gzip' }
   }
 }
