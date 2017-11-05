@@ -5,24 +5,14 @@ const directory = './frontend'
 const fs = require('fs')
 
 function copy (path, fileData) {
-  return new Promise((resolve, reject) => {
-    const parts = path.split('/')
-    console.log('Inside Copy')
-    parts[1] = 'dist'
-    console.log(parts);
-    const dest = handleURL(parts.join('/'))
-    console.log(path);
-    const trueURL = handleURL(path)
-    return copyFile(trueURL, dest).then(resolve)
-  })
-}
+  const parts = path.split('/')
+  parts[1] = 'dist'
+  const dest = handleURL(parts.join('/'))
 
-function copyFile (source, target) {
   return new Promise(function (resolve, reject) {
-    fs.copyFile(source, target, (err) => {
-      if (err) reject(err)
-      console.log('copied: ' + source)
-      resolve('Copied: ' + source)
+    fs.writeFile(dest, fileData, (err) => {
+      if(err) reject(err)
+      resolve('Copied: ' + dest);
     })
   })
 }
